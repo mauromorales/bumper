@@ -26,6 +26,6 @@ jobs:
     - uses: actions/setup-go@v5
       with:
         go-version: ${{ matrix.version }}
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - run: go vet ./...
     - run: go test pkg/*
